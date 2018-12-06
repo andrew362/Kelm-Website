@@ -1,0 +1,281 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+
+
+
+ .animated {
+  animation-duration: 1.4s;
+  animation-fill-mode: both;
+ }
+
+ .scrollpoint {
+   opacity: 0;
+ }
+
+ .scrollpoint.active {
+   opacity: 1;
+ }
+
+ .sidenav-overlay {
+   z-index: 0;
+ }
+
+nav {
+  height: 120px;
+  line-height: 120px;
+  transition: all 300ms ease;
+}
+
+a {
+  color: inherit ;
+}
+
+#menu {
+  background-color: rgba(255,255,255,.1);
+}
+
+.navbar-fixed {
+  position: fixed;
+}
+
+#menu.nav--small {
+  height: 67px;
+  line-height: 67px;
+  background-color: #fff;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+#logo-container {
+  height: 100%;
+}
+
+#logo-container img {
+  height: 80%;
+  margin-top: 10%;
+}
+
+#index-banner {
+  min-height: 100vh;
+  position: relative;
+}
+
+#catalog_download {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+#catalog_download img {
+  height: 200px;
+  display: block;
+  margin: auto;
+}
+
+p {
+  line-height: 1.6rem;
+  font-size: 1.1rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  height: auto;
+  line-height: 0;
+  color: rgba(255,255,255,.9);
+}
+
+.parallax-container.second {
+  height: 600px;
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+  .parallax-container .section.top {
+    position: relative;
+    top: 120px;
+    height: 100vh;
+  }
+
+  .parallax-container .section.top .container {
+    height: calc(100vh - 134px);
+    position: relative;
+  }
+
+  .parallax-container .section.bottom {
+    position: relative;
+    border-top: 20px solid #fff;
+  }
+
+  .bg-transparent--dark {
+    background-color: rgba(0,0,0,0.7);
+  }
+
+  .parallax-container .divider {
+    height: 20px;
+    background-color: #fff;
+  }
+
+
+
+.flex-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.flex-items .col {
+  width:25%;
+  margin: auto;
+  min-width: 200px;
+  height: 250px;
+}
+
+
+
+.icon-block {
+  position: relative;
+  height: 100%;
+  text-align: center;
+}
+
+.icon-block img {
+  height: 110px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+  opacity: 1;
+  transition: 200ms opacity ease;
+}
+
+.icon-block img:hover {
+  opacity: 0.4;
+}
+
+.icon-block h5:hover {
+  text-decoration: underline;
+}
+
+.icon-block h5 {
+  position: relative;
+  top: 110px;
+  text-align: center;
+  
+}
+
+.card.hoverable .card-reveal {
+  transition: all 300ms ease;
+  display: block !important;
+  transform: translateY(-100%) !important;
+}
+
+.card-reveal {
+  opacity: 0;
+}
+
+.card.hoverable:hover .card-reveal {
+  opacity: 1;
+  background-color: rgba(255,255,255,0.8);
+}
+
+#aktualnosci h4 {
+  margin-top: 0;
+}
+
+.card-filtering ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.card-filtering li {
+  display: inline-block;
+  margin: 5px;
+}
+
+.collection .collection-item{
+  height: 70px;
+  padding: 0;
+}
+
+.collection .title {
+  font-size: 1.5rem;
+  line-height: 70px;
+}
+
+.collection .material-icons {
+  font-size: 2.5rem;
+  transform: translate(0,10px);
+  margin-right: 10px;
+}
+
+.select-wrapper input.select-dropdown, .select-wrapper .caret {
+  color: #fff;
+  fill: #fff;
+}
+
+.select-dropdown.dropdown-content li:not(.disabled) span {
+  color: #1565C0;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width : 992px) {
+
+  
+
+  #index-banner .btn {
+    line-height: normal;
+    white-space: nowrap;
+    width: auto;
+  }
+
+  #catalog_download {
+    margin-top: 0px;
+  }
+
+  #catalog_download img {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width : 600px) {
+  #catalog_download .btn i{
+    display: none;
+  }
+
+
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
