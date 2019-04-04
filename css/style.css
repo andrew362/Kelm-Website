@@ -157,7 +157,7 @@ p {
   left: 50%;
   transform: translate(-50%,0);
   opacity: 1;
-  transition: 200ms opacity ease;
+  transition: opacity 200ms  ease;
 }
 
 .icon-block img:hover {
@@ -176,7 +176,8 @@ p {
 }
 
 .card.hoverable .card-reveal {
-  transition: all 300ms ease;
+  transition: opacity 300ms ease;
+  transition: background-color 300ms ease;
   display: block !important;
   transform: translateY(-100%) !important;
 }
@@ -232,6 +233,10 @@ p {
   color: #1565C0;
 }
 
+
+.filtr-container.gallery {
+	min-height:100px;
+}
 
 
 
