@@ -176,8 +176,7 @@ p {
 }
 
 .card.hoverable .card-reveal {
-  transition: opacity 300ms ease;
-  transition: background-color 300ms ease;
+  transition: opacity 300ms ease, background-color 300ms ease;
   display: block !important;
   transform: translateY(-100%) !important;
 }
